@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Новости</title>
+
+		<!-- Подключение стилей -->
+		<link rel="stylesheet" href="css/start-style.css" />
+		<link rel="stylesheet" href="css/news.css" />
+	</head>
+	<body></body>
+</html>
+
+<body>
+	<header class="header">
+		<div class="burger" id="burger"></div>
+
+		<a href="index.html" class="logo">
+			<img src="./images/icons/logo.svg" alt="СМАРТПРИБОР" class="logo-img" />
+		</a>
+
+		<menu class="menu" id="menu">
+			<a href="index.html" class="menu-item">Главная</a>
+			<a href="devices.html" class="menu-item">Устройства</a>
+			<a href="project.html" class="menu-item">О проекте</a>
+			<a href="documents.html" class="menu-item">Документация</a>
+			<a class="menu-item active">Новости</a>
+		</menu>
+
+		<a href="#" class="buy-button">Заказать</a>
+	</header>
+
+	<main>
+		<!-- Новости -->
+		<section class="news">
+			<div class="container">
+				<ul class="news__list">
+					<li class="news-item">
+						<p class="news-date">20.11.2023</p>
+						<h3 class="news-title">
+							Получен сертификат соответствия ТР ТС 012/2011
+						</h3>
+						<p class="news-text">
+							Получен сертификат соответствия ТР ТС 012/2011
+						</p>
+						<a href="" class="news-link">Подробнее...</a>
+						<hr class="news-hr" />
+					</li>
+					<li class="news-item">
+						<p class="news-date">17.08.2023</p>
+						<h3 class="news-title">
+							Опубликована декларация о соответствии плотномера-вискозиметра
+							"СМАРТ" регламенту ТР ТС 020/2011 ЭМС ТС
+						</h3>
+						<p class="news-text">
+							Опубликована декларация о соответствии плотномера-вискозиметра
+							"СМАРТ" регламенту ТР ТС 020/2011 ЭМС ТС
+						</p>
+						<a href="" class="news-link">Подробнее...</a>
+						<hr class="news-hr" />
+					</li>
+					<li class="news-item">
+						<p class="news-date">26.12.2022</p>
+						<h3 class="news-title">
+							Получен патент № 2786773 "Устройство для определения плотности
+							и/или вязкости жидкости и газов"
+						</h3>
+						<p class="news-text">
+							Получен патент № 2786773 "Устройство для определения плотности
+							и/или вязкости жидкости и газов"
+						</p>
+						<a href="" class="news-link">Подробнее...</a>
+						<hr class="news-hr" />
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Обратная связь -->
+		<section class="feedback">
+			<div class="container">
+				<div class="feedback__inner">
+					<div class="f-left__block">
+						<h3 class="feedback-title">
+							Хотите сделать заказ?<br />Мы ждем вашей заявки!
+						</h3>
+						<ul class="f-contact__list">
+							<div class="contact-item">
+								<img src="./images/icons/phone.svg" alt="" />
+								<a href="tel: +79612940260" class="contact-link"
+									>+7 (961) 294-02-60</a
+								>
+							</div>
+							<div class="contact-item">
+								<img src="./images/icons/mail.svg" alt="" />
+								<a href="mailto: smartpribor@inbox.ru" class="contact-link"
+									>smartpribor@inbox.ru</a
+								>
+							</div>
+							<div class="contact-item">
+								<img src="./images/icons/mail.svg" alt="" />
+								<a href="mailto: info@smartpribor.com" class="contact-link"
+									>info@smartpribor.com</a
+								>
+							</div>
+						</ul>
+						<p class="feedback-text">
+							*Можете обращаться к нам по любым вопросам. Будем рады помочь и
+							проконсультировать вас!
+						</p>
+					</div>
+					<div class="f-right__block">
+						<h3 class="feedback-title">Не хотите писать нам лично?</h3>
+						<p class="feedback-text">
+							*Оставьте свой номер телефона или почту, а мы свяжемся с вами в
+							близжайшее время.
+						</p>
+						<form action="" class="feedback__form">
+							<input
+								type="tel"
+								class="feedback-number"
+								placeholder="Номер телефона:"
+							/>
+							<input type="email" class="feedback-mail" placeholder="Почта:" />
+							<button class="feedback-button" type="submit">
+								Отправить заявку
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<p class="footer-text">©️ 2001-2023 ООО “СМАРТРИБОР”</p>
+				<p class="footer-text">
+					Ростовская область, г.о. город Ростов-на-Дону, г. Ростов- на-дону, ул.
+					Малиновского, влд. 3, плмещение 7 / 8.
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- ПОДКЛЮЧЕНИЕ СКРИПТОВ -->
+	<script src="js/script.js"></script>
+</body>
