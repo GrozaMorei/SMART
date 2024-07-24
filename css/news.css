@@ -94,7 +94,7 @@ h3 {
 	transition: all 0.6s ease;
 }
 .buy-button {
-	font-size: 26px;
+	font-size: 20px;
 	padding: 5px 30px;
 	color: #ffffff;
 	background: var(--blue);
