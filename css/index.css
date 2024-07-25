@@ -33,11 +33,13 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	overflow: hidden;
 	font-family: 'Roboto';
 	font-weight: 400;
 	font-size: 20px;
 	color: var(--dark);
+}
+main {
+	overflow: hidden;
 }
 .container {
 	max-width: 1200px;
