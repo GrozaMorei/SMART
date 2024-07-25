@@ -11,33 +11,47 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		.then(data => {
 			// Получаем контейнер из разметки
-			const productList = document.getElementById('product__list');
+			const modelList = document.getElementById('model__list');
 
 			// Перебираем все элементы
-			data.forEach(product => {
-				const productCard = document.createElement('div');
-				productCard.classList.add('product-card');
+			data.forEach(model => {
+				if (model.demonstration == "true") {
+					const modelItem = document.createElement('ul');
+					modelItem.classList.add('model-item');
 
-				const productImage = document.createElement('img');
-				productImage.src = product.image;
-				productImage.classList.add('product-img');
-				productCard.appendChild(productImage);
+					const modelTop = document.createElement('div');
+					modelTop.classList.add('model-top');
+					modelItem.appendChild(modelTop);
 
-				const productRight = document.createElement('div');
-				productRight.classList.add('product__right');
-				productCard.appendChild(productRight);
+					const modelBottom = document.createElement('div');
+					modelBottom.classList.add('model-bottom');
+					modelItem.appendChild(modelBottom);
 
-				const productTitle = document.createElement('h2');
-				productTitle.textContent = product.title;
-				productTitle.classList.add('product-title');
-				productRight.appendChild(productTitle);
+					const modelItemTitle = document.createElement('h3');
+					modelItemTitle.classList.add('model-item-title');
+					modelItemTitle.textContent = model.title;
+					modelTop.appendChild(modelItemTitle);
 
-				const productDescription = document.createElement('p');
-				productDescription.textContent = product.description;
-				productDescription.classList.add('product-description');
-				productRight.appendChild(productDescription);
+					const modelItemText = document.createElement('p');
+					modelItemText.classList.add('model-item-text');
+					modelItemText.textContent = model.description;
+					modelTop.appendChild(modelItemText);
 
-				productList.appendChild(productCard);
+					const modelItemButton1 = document.createElement('a');
+					modelItemButton1.classList.add('model-item-button');
+					modelItemButton1.href = '#footer';
+					modelItemButton1.textContent = 'Заказать';
+					modelBottom.appendChild(modelItemButton1);
+
+					const modelItemButton2 = document.createElement('a');
+					modelItemButton2.classList.add('model-item-button');
+					modelItemButton2.href = 'devices.html';
+					modelItemButton2.textContent = 'Подробнее';
+					modelBottom.appendChild(modelItemButton2);
+
+					modelList.appendChild(modelItem);
+					
+				}
 			});
 		});
 });
