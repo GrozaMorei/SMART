@@ -19,13 +19,21 @@ document.addEventListener('DOMContentLoaded', function () {
 					const modelItem = document.createElement('ul');
 					modelItem.classList.add('model-item');
 
+					const modelLeft = document.createElement('div');
+					modelLeft.classList.add('model-left');
+					modelItem.appendChild(modelLeft);
+
+					const modelRight = document.createElement('div');
+					modelLeft.classList.add('model-right');
+					modelItem.appendChild(modelRight);
+
 					const modelTop = document.createElement('div');
 					modelTop.classList.add('model-top');
-					modelItem.appendChild(modelTop);
+					modelLeft.appendChild(modelTop);
 
 					const modelBottom = document.createElement('div');
 					modelBottom.classList.add('model-bottom');
-					modelItem.appendChild(modelBottom);
+					modelLeft.appendChild(modelBottom);
 
 					const modelItemTitle = document.createElement('h3');
 					modelItemTitle.classList.add('model-item-title');
@@ -48,6 +56,11 @@ document.addEventListener('DOMContentLoaded', function () {
 					modelItemButton2.href = 'devices.html';
 					modelItemButton2.textContent = 'Подробнее';
 					modelBottom.appendChild(modelItemButton2);
+
+					const img = document.createElement('img');
+					img.classList.add('model-item-img');
+					img.src = model.image;
+					modelRight.appendChild(img);
 
 					modelList.appendChild(modelItem);
 					
