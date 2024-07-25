@@ -1,7 +1,7 @@
 // Ждем, пока разметка страницы загрузится
 document.addEventListener('DOMContentLoaded', function () {
 	// Запрос к json-файлу
-	fetch('../data/data.json')
+	fetch('SMART/data/data.json')
 		.then(response => {
 			if (!response.ok) {
 				throw new Error('Network response was not ok ' + response.statusText);
