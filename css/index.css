@@ -29,6 +29,9 @@
 	--dark-light: #14213d99;
 	--white: #ffffff;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: 'Roboto';
 	font-weight: 400;
