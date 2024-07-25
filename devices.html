@@ -7,30 +7,123 @@
 
 		<!-- Подключение стилей -->
 		<link rel="stylesheet" href="css/start-style.css" />
-		<link rel="stylesheet" href="css/news.css" />
+		<link rel="stylesheet" href="css/devices.css" />
 	</head>
-	<body></body>
+
+	<body>
+		<header class="header">
+			<div class="burger" id="burger"></div>
+
+			<a href="index.html" class="logo">
+				<img src="./images/icons/logo.svg" alt="СМАРТПРИБОР" class="logo-img" />
+			</a>
+
+			<menu class="menu" id="menu">
+				<a href="index.html" class="menu-item">Главная</a>
+				<a class="menu-item active">Устройства</a>
+				<a href="project.html" class="menu-item">О проекте</a>
+				<a href="documents.html" class="menu-item">Документация</a>
+				<a href="news.html" class="menu-item">Новости</a>
+			</menu>
+
+			<a href="#" class="buy-button">Заказать</a>
+		</header>
+
+		<main class="main">
+			<!-- Продукты -->
+			<div class="container">
+				<div
+					class="product__list"
+					id="product__list"
+					class="product__list"
+				></div>
+			</div>
+
+			<!-- Обратная связь -->
+			<section class="feedback">
+				<div class="container">
+					<div class="feedback__inner">
+						<div class="f-left__block">
+							<h3 class="feedback-title">
+								Хотите сделать заказ?<br />Мы ждем вашей заявки!
+							</h3>
+							<ul class="f-contact__list">
+								<div class="contact-item">
+									<img
+										class="contact-img-1"
+										src="./images/icons/phone.svg"
+										alt=""
+									/>
+									<a href="tel: +79612940260" class="contact-link"
+										>+7 (961) 294-02-60</a
+									>
+								</div>
+								<div class="contact-item">
+									<img
+										class="contact-img"
+										src="./images/icons/mail.svg"
+										alt=""
+									/>
+									<a href="mailto: smartpribor@inbox.ru" class="contact-link"
+										>smartpribor@inbox.ru</a
+									>
+								</div>
+								<div class="contact-item">
+									<img
+										class="contact-img"
+										src="./images/icons/mail.svg"
+										alt=""
+									/>
+									<a href="mailto: info@smartpribor.com" class="contact-link"
+										>info@smartpribor.com</a
+									>
+								</div>
+							</ul>
+							<p class="feedback-text">
+								*Можете обращаться к нам по любым вопросам. Будем рады помочь и
+								проконсультировать вас!
+							</p>
+						</div>
+						<div class="f-right__block">
+							<h3 class="feedback-title">Не хотите писать нам лично?</h3>
+							<p class="feedback-text">
+								*Оставьте свой номер телефона или почту, а мы свяжемся с вами в
+								близжайшее время.
+							</p>
+							<form action="" class="feedback__form">
+								<input
+									type="tel"
+									class="feedback-number"
+									placeholder="Номер телефона:"
+								/>
+								<input
+									type="email"
+									class="feedback-mail"
+									placeholder="Почта:"
+								/>
+								<button class="feedback-button" type="submit">
+									Отправить заявку
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<p class="footer-text">©️ 2001-2023 ООО “СМАРТРИБОР”</p>
+					<p class="footer-text">
+						Ростовская область, г.о. город Ростов-на-Дону, г. Ростов- на-дону,
+						ул. Малиновского, влд. 3, плмещение 7 / 8.
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- ПОДКЛЮЧЕНИЕ СКРИПТОВ -->
+		<script src="js/devices.js"></script>
+	</body>
 </html>
-
-<body>
-	<header class="header">
-		<div class="burger" id="burger"></div>
-
-		<a href="index.html" class="logo">
-			<img src="./images/icons/logo.svg" alt="СМАРТПРИБОР" class="logo-img" />
-		</a>
-
-		<menu class="menu" id="menu">
-			<a href="index.html" class="menu-item">Главная</a>
-			<a class="menu-item active">Устройства</a>
-			<a href="project.html" class="menu-item">О проекте</a>
-			<a href="documents.html" class="menu-item">Документация</a>
-			<a href="news.html" class="menu-item">Новости</a>
-		</menu>
-
-		<a href="#" class="buy-button">Заказать</a>
-	</header>
-
-	<!-- ПОДКЛЮЧЕНИЕ СКРИПТОВ -->
-	<script src="js/script.js"></script>
-</body>
