@@ -14,6 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
 			const newsList = document.getElementById('news__list');
 
 			// Перебираем все элементы
+			.then(data => {
+			// Получаем контейнер из разметки
+			const newsList = document.getElementById('news__list');
+
+			// Перебираем все элементы
 			data.forEach(news => {
 				const newsItem = document.createElement('div');
 				newsItem.classList.add('news-item');
@@ -30,18 +35,13 @@ document.addEventListener('DOMContentLoaded', function () {
 				newsTitle.textContent = news.title;
 				newsItem.appendChild(newsTitle);
 
-				// Загружаем изображение (при наличии)
-				if (news.image != 'none') {
-					const newsImage = document.createElement('img');
-					newsImage.src = news.image;
-					newsImage.classList.add('news-img');
-					newsItem.appendChild(newsImage);
-				}
-
 				// Загружаем описание
 				const newsText = document.createElement('p');
 				newsText.classList.add('news-text');
 				newsText.textContent = news.description;
+				if (newsText.lenght > 100) {
+					newsText = newsText.slice(0, 100) + '...';
+				}
 				newsItem.appendChild(newsText);
 
 				newsList.appendChild(newsItem);
