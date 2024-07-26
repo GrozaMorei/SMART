@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
 				// Загружаем изображение (при наличии)
 				if (news.image != 'none') {
 					const newsImage = document.createElement('img');
-					productImage.src = news.image;
-					productImage.classList.add('news-img');
+					newsImage.src = news.image;
+					newsImage.classList.add('news-img');
 					newsItem.appendChild(newsImage);
 				}
 
