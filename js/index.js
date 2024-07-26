@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				let newsTextTransform = news.description;
 				if (newsTextTransform.lenght > 2) {
 					newsTextTransform = newsTextTransform.slice(0,2) + '...';
+					console.log(newsTextTransform);
 				}
 				newsText.textContent = newsTextTransform;
 				newsItem.appendChild(newsText);
