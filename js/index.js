@@ -14,11 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			const newsList = document.getElementById('news__list');
 
 			// Перебираем все элементы
-			.then(data => {
-			// Получаем контейнер из разметки
-			const newsList = document.getElementById('news__list');
-
-			// Перебираем все элементы
 			data.forEach(news => {
 				const newsItem = document.createElement('div');
 				newsItem.classList.add('news-item');
