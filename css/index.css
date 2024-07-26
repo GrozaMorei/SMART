@@ -329,6 +329,7 @@ h3 {
 	padding: 20px;
 	background: #fff;
 	border-radius: 20px;
+	justify-content: space-between;
 	box-shadow: inset 2px 4px 4px var(--dark-light);
 }
 .model-left {
