@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				newsItem.appendChild(newsTitle);
 
 				// Загружаем описание
-				const newsText = document.createElement('p');
+				let newsText = document.createElement('p');
 				newsText.classList.add('news-text');
 				newsText.textContent = news.description;
 				if (newsText.lenght > 100) {
