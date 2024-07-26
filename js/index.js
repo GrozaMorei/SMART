@@ -1,6 +1,58 @@
 // Ждем, пока разметка страницы загрузится
 document.addEventListener('DOMContentLoaded', function () {
 	// Запрос к json-файлу
+	fetch('data/news/news.json')
+		.then(response => {
+			if (!response.ok) {
+				throw new Error('Network response was not ok ' + response.statusText);
+			}
+			return response.json();
+		})
+
+		.then(data => {
+			// Получаем контейнер из разметки
+			const newsList = document.getElementById('news__list');
+
+			// Перебираем все элементы
+			data.forEach(news => {
+				const newsItem = document.createElement('div');
+				newsItem.classList.add('news-item');
+
+				// Загружаем дату
+				const newsDate = document.createElement('p');
+				newsDate.classList.add('news-date');
+				newsDate.textContent = news.date;
+				newsItem.appendChild(newsDate);
+
+				// Загружаем название
+				const newsTitle = document.createElement('h3');
+				newsTitle.classList.add('news-title');
+				newsTitle.textContent = news.title;
+				newsItem.appendChild(newsTitle);
+
+				// Загружаем изображение (при наличии)
+				if (news.image != 'none') {
+					const newsImage = document.createElement('img');
+					productImage.src = news.image;
+					productImage.classList.add('news-img');
+					newsItem.appendChild(newsImage);
+				}
+
+				// Загружаем описание
+				const newsText = document.createElement('p');
+				newsText.classList.add('news-text');
+				newsText.textContent = news.description;
+				newsItem.appendChild(newsText);
+
+				newsList.appendChild(newsItem);
+			});
+		});
+});
+	
+	
+	
+	
+	// Запрос к json-файлу
 	fetch('data/devices/devices.json')
 		.then(response => {
 			if (!response.ok) {
