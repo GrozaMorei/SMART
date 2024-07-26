@@ -31,12 +31,13 @@ document.addEventListener('DOMContentLoaded', function () {
 				newsItem.appendChild(newsTitle);
 
 				// Загружаем описание
-				let newsText = document.createElement('p');
+				const newsText = document.createElement('p');
 				newsText.classList.add('news-text');
-				newsText.textContent = news.description;
-				if (newsText.lenght > 100) {
-					newsText = newsText.slice(0, 100) + '...';
+				let newsTextTransform = news.description;
+				if (newsTextTransform.lenght > 100) {
+					newsTextTransform.slice(0,100) + '...';
 				}
+				newsText.textContent = newsTextTransform;
 				newsItem.appendChild(newsText);
 
 				newsList.appendChild(newsItem);
