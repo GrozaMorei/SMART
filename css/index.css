@@ -652,6 +652,7 @@ h3 {
 	.quarantee-img {
 		height: 400px;
 		top: -40px;
+		right: 40px;
 		transform: none;
 	}
 }
