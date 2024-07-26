@@ -47,9 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
 				newsList.appendChild(newsItem);
 			});
 		});
-});
-	
-	
 	
 	
 	// Запрос к json-файлу
