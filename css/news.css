@@ -137,10 +137,12 @@ h3 {
 	align-items: flex-start;
     	padding: 10px;
     	box-shadow: inset 0px -12px 11px #ffff;
+	transition: all 0.6s ease;
 }
 .news-content.active {
 	height: 100%;
 	box-shadow: none;
+	transition: all 0.6s ease;
 }
 .news-image {
 	height: 500px;
