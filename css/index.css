@@ -214,6 +214,7 @@ h3 {
 .news-title {
 	color: var(--blue);
 	margin-bottom: 5px;
+	font-size: 22px;
 }
 .news-text {
 	font-size: 18px;
