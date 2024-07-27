@@ -50,6 +50,11 @@ document.addEventListener('DOMContentLoaded', function () {
 				
 				newsItem.appendChild(newsContent);
 
+				// Создаем кнопку
+				const newsButton = document.createElement('button');
+				newsButton.classList.add('news-button');
+				newsButton.textContent = 'Подробнее...';
+
 				// Создаем разделяющую полосу
 				const newsHr = document.createElement('hr');
 				newsHr.classList.add('news-hr');
