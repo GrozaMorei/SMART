@@ -49,7 +49,7 @@ main {
 h2 {
 	font-family: 'Roboto';
 	font-weight: 900;
-	font-size: 48px;
+	font-size: 40px;
 }
 h3 {
 	font-family: 'Roboto';
@@ -525,7 +525,7 @@ h3 {
 	color: var(--blue);
 }
 .quarantee-text {
-	font-size: 26px;
+	font-size: 22px;
 	max-width: 740px;
 	text-align: justify;
 }
