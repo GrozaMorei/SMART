@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				newsButton.classList.add('news-button');
 				newsButton.textContent = 'Подробнее...';
 				newsButton.addEventListener('click', function() {
-					newsContent.height = '100%';
+					newsContent.classList.toggle('active');
 				}
 				newsItem.appendChild(newsButton);
 
