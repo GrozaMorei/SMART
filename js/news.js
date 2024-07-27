@@ -30,18 +30,33 @@ document.addEventListener('DOMContentLoaded', function () {
 				newsTitle.textContent = news.title;
 				newsItem.appendChild(newsTitle);
 
+				// Создаем контентный блок
+				const newsContent = document.createElement('div');
+				newsContent.classList.add('news-content');
+
 				// Загружаем описание
 				const newsText = document.createElement('p');
 				newsText.classList.add('news-text');
 				newsText.textContent = news.description;
+				newsContent.appendChild(newsText);
 
-        // Загружаем изображение (если оно есть)
-        const newsImage = document.createElement('img');
-        newsImage.classList.add('news-image');
-        newsImage.src = news.img;
-        newsItem.appendChild(newsImage);
+				// Загружаем изображение (если оно есть)
+				if (news.img != 'none') {
+					const newsImage = document.createElement('img');
+					newsImage.classList.add('news-image');
+        				newsImage.src = news.img;
+        				newsContent.appendChild(newsImage);
+				};
+				
+				newsItem.appendChild(newsContent);
 
+				// Создаем разделяющую полосу
+				const newsHr = document.createElement('hr');
+				newsHr.classList.add('news-hr');
+				newsItem.appendChild(newsHr);
+				
 				newsList.appendChild(newsItem);
+				
 			});
 		});
 });
