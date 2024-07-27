@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', function () {
 				newsContent.appendChild(newsText);
 
 				// Загружаем изображение (если оно есть)
-				if (news.img != 'none') {
+				if (news.image != 'none') {
 					const newsImage = document.createElement('img');
 					newsImage.classList.add('news-image');
-        				newsImage.src = news.img;
+        				newsImage.src = news.image;
         				newsContent.appendChild(newsImage);
 				};
 				
