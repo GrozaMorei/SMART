@@ -135,6 +135,9 @@ h3 {
     	align-items: center;
     	overflow: hidden;
 }
+.news-content.active {
+	height: 100%;
+}
 .news-image {
 	height: 500px;
     	box-shadow: 0px 0px 4px #1515159e;
