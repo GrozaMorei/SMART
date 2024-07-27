@@ -134,6 +134,7 @@ h3 {
     	flex-direction: column;
     	overflow: hidden;
 	background: #ececec;
+	align-items: flex-start;
     	padding: 10px;
     	box-shadow: inset 0px -12px 11px #ffff;
 }
