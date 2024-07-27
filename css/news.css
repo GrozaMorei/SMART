@@ -132,6 +132,9 @@ h3 {
 	color: var(--blue);
 	text-decoration: underline;
 }
+.news-text {
+	margin-bottom: 15px;
+}
 .news-hr {
 	background: var(--blue);
 	width: 100%;
