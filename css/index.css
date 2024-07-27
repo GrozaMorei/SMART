@@ -208,6 +208,17 @@ h3 {
 	padding-right: 40px;
 	left: 20px;
 }
+.news-date {
+	margin-bottom: 5px;
+}
+.news-title {
+	color: var(--blue);
+	margin-bottom: 5px;
+}
+.news-text {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
 
 /* Секция 2 */
 .personal {
