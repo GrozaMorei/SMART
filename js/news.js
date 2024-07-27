@@ -54,6 +54,9 @@ document.addEventListener('DOMContentLoaded', function () {
 				const newsButton = document.createElement('button');
 				newsButton.classList.add('news-button');
 				newsButton.textContent = 'Подробнее...';
+				newsButton.addEventListener('click', function() {
+					newsContent.height = '100%';
+				}
 				newsItem.appendChild(newsButton);
 
 				// Создаем разделяющую полосу
