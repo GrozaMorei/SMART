@@ -41,6 +41,13 @@ document.addEventListener('DOMContentLoaded', function () {
 				newsText.textContent = newsTextTransform;
 				newsItem.appendChild(newsText);
 
+				// Добавляем горизонтальную линию после каждого блока новости, кроме последнего
+                		if (news.index < data.length - 1) {
+                    			const newsHr = document.createElement('hr');
+					newsHr.classList.add('news-hr');
+                    			newsItem.appendChild(hr);
+                		}
+
 				newsList.appendChild(newsItem);
 			});
 		});
