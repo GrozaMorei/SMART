@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			// Перебираем все элементы
 			data.forEach(news => {
-				const newsItem = document.createElement('div');
+				const newsItem = document.createElement('li');
 				newsItem.classList.add('news-item');
 
 				// Загружаем дату
