@@ -403,8 +403,11 @@ h3 {
 	}
 
 	/* Новости */
-	.news-item {
-		font-size: 20px;
+	.news-text {
+		font-size: 16px;
+	}
+	.news-image {
+		height: 300px;
 	}
 
 	/* Обратная связь */
