@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
 				const newsText = document.createElement('p');
 				newsText.classList.add('news-text');
 				let newsTextTransform = news.description;
-				if (newsTextTransform.length > 100) {
-					newsTextTransform = newsTextTransform.slice(0,100) + '...';
+				if (newsTextTransform.length > 80) {
+					newsTextTransform = newsTextTransform.slice(0,80) + '...';
 					console.log(newsTextTransform);
 				}
 				newsText.textContent = newsTextTransform;
