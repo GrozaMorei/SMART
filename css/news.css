@@ -153,6 +153,12 @@ h3 {
 .news-text {
 	margin-bottom: 25px;
 }
+.news-button {
+	width: 100px;
+    	font-size: 20px;
+    	color: var(--blue);
+    	cursor: pointer;
+}
 .news-hr {
 	background: var(--blue);
 	width: 100%;
