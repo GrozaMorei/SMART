@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 		if (news.index < data.length - 1) {
                     			const newsHr = document.createElement('hr');
 					newsHr.classList.add('news-hr');
-                    			newsItem.appendChild(hr);
+                    			newsItem.appendChild(newsHr);
                 		}
 
 				newsList.appendChild(newsItem);
